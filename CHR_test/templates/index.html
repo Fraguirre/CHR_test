@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="col-xl-12 col-lg-12 col-md-12 col-12 layout-top-spacing layout-spacing">
+    <div class="widget widget-content-area br-4">
+        <div class="widget-one">
+
+            <h1>Datos</h1>
+
+            {% for data in data %}
+                {{ data|safe }}
+            {% endfor %}
+
+
+            <h1>Estaciones</h1>
+            {% for estacion in estaciones %}
+                {{ estacion|safe }}
+            {% endfor %}
+
+        </div>
+    </div>
+</div>
+{% endblock %}
